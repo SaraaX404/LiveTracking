@@ -50,6 +50,7 @@ const App: React.FC = () => {
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
+        options={{ minZoom:2 }}
         zoom={8}
       >
         {directions && <DirectionsRenderer directions={directions} options={{ suppressMarkers: true }} />}
